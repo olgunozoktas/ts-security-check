@@ -76,3 +76,7 @@ test("npm audit: no lockfile is info, a failed audit is medium (fail closed), an
   assert.deepEqual(found.map((f) => [f.severity, f.message.split(" ")[0]]), [["high", "lodash"]]);
   assert.deepEqual(audit("clean", path.join(FIX, "npm-audit", "no-such-npm")).map((f) => f.severity), ["info"]);
 });
+
+test("an archive folder is not read", () => {
+  assert.deepEqual(load(path.join(FIX, "archive-skip")).files.map((f) => f.path), ["x.ts"]);
+});

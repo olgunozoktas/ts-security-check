@@ -18,7 +18,7 @@ npx ts-security-check --tests                         # also read *.test.* and *
 Exit 0: nothing at or above `--fail-on`. Exit 1: a finding. Exit 2: a wrong flag, or a folder with no `package.json`,
 `tsconfig.json` or `jsconfig.json`.
 
-**Not read:** `node_modules`, `dist`, `build`, `out`, `coverage`, `.next`, `.nuxt`, `.output`, `vendor`, hidden folders,
+**Not read:** `node_modules`, `dist`, `build`, `out`, `coverage`, `.next`, `.nuxt`, `.output`, `vendor`, `archive`, hidden folders,
 `.d.ts` files, files over 1 MB, and built files (a `.min.js`, a line over 2,000 characters, or a bundler's runtime
 such as webpack's). The summary line counts the skipped files.
 

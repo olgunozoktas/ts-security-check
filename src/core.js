@@ -13,7 +13,7 @@ export const rank = (s) => SEVERITIES.indexOf(s);
 const EXTENSIONS = { ".ts": ts.ScriptKind.TS, ".tsx": ts.ScriptKind.TSX, ".mts": ts.ScriptKind.TS, ".cts": ts.ScriptKind.TS,
   ".js": ts.ScriptKind.JS, ".jsx": ts.ScriptKind.JSX, ".mjs": ts.ScriptKind.JS, ".cjs": ts.ScriptKind.JS };
 // Not the project's own code: dependencies, builds, coverage, version control.
-const SKIP = new Set(["node_modules", "dist", "build", "out", "coverage", ".next", ".nuxt", ".output", "vendor", ".git", ".turbo"]);
+const SKIP = new Set(["node_modules", "dist", "build", "out", "coverage", ".next", ".nuxt", ".output", "vendor", ".git", ".turbo", "archive"]); // archive: old code kept for reading, never run
 const MAX_BYTES = 1_000_000; // a bigger file is a bundle or data, not code: skipped and counted
 // Built output, not the project's source: a .min.js, a line over 2,000 characters (minified), or a bundler's runtime
 // (one real Laravel project, 2026-11-07: all 4 high findings were in public/js/app.js, a webpack bundle of Alpine).
