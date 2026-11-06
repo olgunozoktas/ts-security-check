@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "{\"error\":{\"code\":\"ENOTFOUND\"}}"; exit 1
