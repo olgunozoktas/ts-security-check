@@ -1,0 +1,16 @@
+{
+  "name": "ts-security-check",
+  "version": "0.1.0",
+  "description": "Security checks for TypeScript and JavaScript projects without AI: the TypeScript compiler's parser, one file for each check, a non-zero exit for CI.",
+  "type": "module",
+  "bin": { "ts-security-check": "bin/ts-security-check.js" },
+  "main": "src/index.js",
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "typescript": "~5.9.3" },
+  "keywords": ["security", "typescript", "javascript", "static-analysis", "audit", "ci"],
+  "author": "Olgun Özoktaş <olgunozoktas@hotmail.com>",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/olgunozoktas/ts-security-check.git" }
+}

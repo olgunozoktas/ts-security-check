@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "{\"auditReportVersion\":2,\"vulnerabilities\":{\"lodash\":{\"severity\":\"high\",\"range\":\"<4.17.21\",\"isDirect\":true,\"fixAvailable\":true}}}"; exit 1
